@@ -1,0 +1,26 @@
+{
+  "name": "hw",
+  "version": "0.0.1",
+  "description": "Example of frontend development environment.",
+  "repository": "https://github.com/Rustem/jsdev",
+  "main": "js/hw_browserify.js",
+  "dependencies": {
+    "process": "~0.7.0"
+  },
+  "devDependencies": {
+    "browserify": "~4.2.2",
+    "watchify": "~0.10.2",
+    "uglify-js": "~2.4.15",
+    "envify": "~2.0.1"
+  },
+  "scripts": {
+    "watch": "watchify js/hw_browserify.js -o js/bundle.js --debug --verbose",
+    "build": "browserify js/hw_browserify.js -o js/bundle.js",
+    "build_prod": "NODE_ENV=production browserify js/hw_browserify | uglifyjs -cm > js/bundle.min.js"
+  },
+  "author": "xepa4ep",
+  "browserify": {
+    "transform": [
+      "envify"]
+  }
+}
