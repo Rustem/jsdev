@@ -1,3 +1,18 @@
+To deploy:
+
+```
+# install node js from source
+
+# install npm
+
+mkdir ~/.npm
+mkdir ~/.node
+# add to system path in ~/.bashrc file
+export PATH="$PATH:$HOME/.node/bin/"
+source ~/.bashrc
+```
+
+
 To build the bundle for production run
 
 ```

@@ -1,4 +1,5 @@
 var unique = require('uniq');
+
 var data = [1, 2, 3, 4, 5, 5, 5, 3, 3, 2, 7, 6, 6];
 console.log(data);
 
@@ -17,3 +18,5 @@ console.log(add(1, 2));
 var Widget = require('./hw_widget');
 var w = Widget();
 w.appendTo('body');
+
+console.log("hello Yernar");
